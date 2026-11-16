@@ -1,0 +1,181 @@
+
+/* Global CSS variables */
+:root {
+    --primary-color: #008751;
+    --secondary-color: #ffffff;
+    --accent-color: #f5c542;
+    --text-color: #222222;
+    --background-color: #f3f6f3;
+    --card-background: #ffffff;
+}
+
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 25px 15px;
+    border-bottom: 5px solid var(--accent-color);
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+}
+
+/* Main content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Hero image */
+.hero {
+    position: relative;
+}
+
+.hero picture {
+    display: block;
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 250px;
+    object-fit: cover;
+}
+
+/* Information and weather cards */
+.hero-panels {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.info-card,
+.weather-card {
+    background-color: var(--card-background);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.info-card h2,
+.weather-card h2,
+.about-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 8px;
+}
+
+.info-card p,
+.weather-card p {
+    margin-bottom: 10px;
+}
+
+/* Mobile weather icon */
+.weather-icon-mobile {
+    display: block;
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 15px;
+}
+
+/* About section */
+.about-section {
+    background-color: var(--card-background);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section p {
+    margin-bottom: 15px;
+}
+
+.about-section ul {
+    padding-left: 25px;
+}
+
+.about-section li {
+    margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 20px;
+    margin-top: 25px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* Larger screens */
+@media screen and (min-width: 700px) {
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-image {
+        height: 600px;
+        object-fit: cover;
+    }
+
+    .hero-panels {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+        padding: 30px;
+        gap: 35px;
+    }
+
+    .info-card,
+    .weather-card {
+        background-color: rgba(255, 255, 255, 0.94);
+        padding: 22px;
+    }
+
+    /* Hide the mobile SVG on larger screens */
+    .weather-icon-mobile {
+        display: none;
+    }
+
+    /* Weather symbol beside heading */
+    .weather-card h2::after {
+        content: " ⛅";
+        margin-left: 10px;
+    }
+
+    .about-section {
+        margin: 30px;
+        padding: 30px;
+    }
+}
