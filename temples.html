@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Explore a picture album of temples from around the world.">
+    <meta name="author" content="God'sown Elijah Daniels">
+
+    <title>Temple Album | WDD 131</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS files: mobile first, then larger screens -->
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h2>Temple Album</h2>
+
+        <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav id="navigation">
+            <a href="index.html">Home</a>
+            <a href="#" data-filter="old">Old</a>
+            <a href="#" data-filter="new">New</a>
+            <a href="#" data-filter="large">Large</a>
+            <a href="#" data-filter="small">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Temple Gallery</h1>
+
+        <div class="temple-grid">
+
+            <figure>
+                <img src="images/temple1.jpg"  alt="Temple building">
+                <figcaption>Temple 1</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple2.jpg" alt="Temple building">
+                <figcaption>Temple 2</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple3.jpg" alt="Temple building">
+                <figcaption>Temple 3</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple4.jpg" alt="Temple building">
+                <figcaption>Temple 4</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple5.jpg" alt="Temple building">
+                <figcaption>Temple 5</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple6.jpg" alt="Temple building">
+                <figcaption>Temple 6</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple7.jpg" alt="Temple building">
+                <figcaption>Temple 7</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple8.jpg" alt="Temple building">
+                <figcaption>Temple 8</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/Temple9.jpg" alt="Temple building">
+                <figcaption>Temple 9</figcaption>
+            </figure>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>
+            God'sown Elijah Daniels | Nigeria
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+
+/* Larger screen layout */
+@media screen and (min-width: 700px) {
+
+    /* Header */
+    header {
+        flex-wrap: nowrap;
+        padding: 20px 5%;
+    }
+
+    header h2 {
+        font-size: 1.8rem;
+    }
+
+    /* Hide hamburger button */
+    #menu-button {
+        display: none;
+    }
+
+    /* Navigation */
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: auto;
+        margin-top: 0;
+    }
+
+    nav a {
+        padding: 12px 18px;
+    }
+
+    /* Gallery */
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+    main {
+        padding: 25px;
+    }
+}
